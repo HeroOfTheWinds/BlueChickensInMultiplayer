@@ -85,6 +85,7 @@ namespace BlueChickensInMultiplayer
                             if (Game1.random.NextDouble() < 0.25)
                             {
                                 animal.type.Set("Blue Chicken");
+                                animal.reload(animal.home);
                                 Monitor.Log($"Chicken turned blue");
                             }
                         }
